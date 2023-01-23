@@ -1,0 +1,3 @@
+1000.0,60
+1000.0,60
+Random road with equal probability

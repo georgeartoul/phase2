@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.07810499359795134" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="683.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SetStrategyController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="109.0" prefWidth="746.0">
+         <children>
+            <Label layoutX="73.0" layoutY="12.0" prefHeight="35.0" prefWidth="471.0" text="Avoiding the traffic jams by multiple drivers">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="49.0" layoutX="6.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/traffic.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="620.0" prefWidth="796.0">
+         <children>
+            <Text layoutX="11.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set strategy of regulation" wrappingWidth="341.6708984375">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="nextBtn" layoutX="703.0" layoutY="533.0" mnemonicParsing="false" onAction="#nextStep" prefHeight="73.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/arrow-right.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="backBtn" layoutX="11.0" layoutY="535.0" mnemonicParsing="false" onAction="#backStep" prefHeight="73.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/arrow-left.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ChoiceBox fx:id="strategyCb" layoutX="21.0" layoutY="111.0" prefHeight="44.0" prefWidth="268.0" />
+            <ImageView fitHeight="293.0" fitWidth="261.0" layoutX="482.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/opportunity.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
